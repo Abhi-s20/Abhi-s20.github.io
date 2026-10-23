@@ -96,7 +96,7 @@ th{color:var(--mute);font-weight:600}
     <h3>Adaptive Improved Primal-Dual Distributed Stochastic Gradient Driven Distributed Active Noise Control System</h3>
     <div class="meta">A. Kar, P. K. Shill, <strong>A. S. Shamkuwar</strong>, S. Saini, Vasundhara, S. Shoba, M. G. Christensen &middot; <em>IEEE Open Journal of Signal Processing</em>, vol. 7</div>
     <p>A distributed algorithm for noise-cancelling systems with several nodes. In simulations on a five-node network it converged faster and left less residual noise than standard methods, including under impulsive noise.</p>
-    <div class="tags"><a href="https://doi.org/10.1109/OJSP.2026.3701314">Paper (IEEE)</a></div><p class="role">My role: I wrote the manuscript up to the simulation section (introduction, background, proposed algorithm and performance analysis) from the methodology provided by my supervisor, and made Figures 1 and 2. Simulations and results were done by co-authors.</p></div>
+    <div class="tags"><a href="https://doi.org/10.1109/OJSP.2026.3701314">Paper (IEEE)</a></div><p class="role">My role: I wrote the manuscript up to the simulation section (introduction, background, proposed algorithm and performance analysis) from the methodology provided by the professor I worked with, and made Figures 1 and 2. Simulations and results were done by co-authors.</p></div>
   <div class="item"><span class="date">2026</span>
     <h3>Early Sepsis Detection from ICU Data Using Multimodal Deep Learning</h3>
     <div class="meta"><strong>A. S. Shamkuwar</strong> (first author), P. Bhardwaj, N. Kumar, M. Singh &middot; <em>CIPHER 2026</em></div>
@@ -111,6 +111,11 @@ th{color:var(--mute);font-weight:600}
 
 <section id="projects">
   <h2>Projects</h2>
+  <div class="item"><span class="date">Ongoing</span><h3>Robust brain tumor segmentation with 3D deep learning</h3>
+    <div class="meta">BraTS adult glioma MRI &middot; 3D U-Net</div>
+    <p>I am building a reproducible 3D pipeline that segments brain tumor sub-regions (whole tumor, tumor core and enhancing tumor) from four MRI sequences: T1, T1c, T2 and FLAIR. The first goal is a carefully justified baseline: brain-masked per-patient normalization, patient-level splits, 3D patch-based training on a single GPU, Dice and HD95 evaluation, and error analysis. Once the baseline is validated, the main question is how well segmentation holds up when one or more MRI sequences are missing.</p>
+    <p class="role">Status: ongoing. Done: data inspection and pipeline planning. In progress: preprocessing and baseline setup. Next: baseline training, evaluation, error analysis, then missing-sequence experiments. Baseline first, evidence before novelty.</p></div>
+
   <div class="item"><h3>MultimodalSepsisNet: early sepsis prediction (M.Tech thesis)</h3>
     <div class="meta">PyTorch &middot; PhysioNet/CinC 2019 &middot; Supervisor: Dr. Manjeet Singh</div>
     <p>Splits 40 clinical variables into four groups (vital signs, lab values, missing-data patterns, static data) and joins them with cross-modal attention. Tested on 39,721 ICU records against eight baselines, including XGBoost, with confidence intervals and ablations.</p>
